@@ -2385,7 +2385,7 @@ input, select, textarea {
 			}
 
 			ul.feature-icons li:before {
-				background: #4acaa8;
+				background: #fafafa;
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
@@ -2755,7 +2755,8 @@ input, select, textarea {
 			}
 
 				#header > footer .icons li a {
-					color: #b7eadc;
+					/* Change color of icons here */
+					color: #ffffff;
 				}
 
 		#header > nav {
@@ -3059,7 +3060,8 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #4acaa8;
+						/* Change toggle color */
+						background: #556B2F;
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
