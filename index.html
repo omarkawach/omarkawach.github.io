@@ -1,386 +1,291 @@
-<!-- Main tag -->
 <!DOCTYPE html>
 
-<!-- Start tag (container) -->
 <html>
-  <head>
-    <title>Omar Kawach's Portfolio</title>
-    <meta charset="UTF-8" />
-    <meta name="Description" content="Omar Kawach's Portfolio" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-  </head>
 
-  <body class="is-preload">
-    <!-- Header -->
-    <section id="header">
-      <header>
-        <h1 id="logo"><a href="#">Omar Kawach</a></h1>
-      </header>
+<head>
+  <title>Omar Kawach's Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="Description" content="Omar Kawach's Portfolio" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
 
-      <nav id="nav">
+<body>
+  <!-- Large Screen Navigation Bar -->
+  <header class="header sticky" id="myHeader">
+    <div class="container">
+      <div>
+        <h2>Omar Kawach</h2>
+        <div class="nav-toggle" id="navToggle">
+          <img id="navClosed" class="navIcon"
+            src="https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/hamburger.svg"
+            alt="hamburger menu" />
+          <img id="navOpen" class="navIcon hidden"
+            src="https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/close.svg"
+            alt="close hamburger" />
+        </div>
+      </div>
+
+      <nav>
         <ul>
-          <li><a href="#one" class="active">Summary</a></li>
-          <li><a href="#two">Notable Work</a></li>
-          <li><a href="#three">Education</a></li>
-          <li><a href="#four">Work Experience</a></li>
-          <li><a href="#five">Volunteer Experience</a></li>
+          <li><a href="#Summary">Summary</a></li>
+          <li><a href="#Achievements">Achievements</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#Experience">Experience</a></li>
         </ul>
       </nav>
-
-      <footer>
-        <ul class="icons">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/omarkawach/"
-              class="icon brands fa-linkedin"
-              ><span class="label">LinkedIn</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/omarkawach"
-              class="icon brands fa-github"
-              ><span class="label">Github</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="mailto:omarkawach@outlool.com"
-              class="icon solid fa-envelope"
-              ><span class="label">Email</span></a
-            >
-          </li>
-        </ul>
-      </footer>
-    </section>
-
-    <!-- Wrapper -->
-    <div id="wrapper">
-      <!-- Main -->
-      <div id="main">
-        <!-- PowerPoint embedded -->
-        <!-- <iframe src="https://onedrive.live.com/embed?cid=A0BFB350AF1E6169&amp;resid=A0BFB350AF1E6169%214127&amp;authkey=AMiAQh8nrqqRl9w&amp;em=2&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>-->
-
-        <!-- One -->
-        <section id="one">
-          <div class="image main" data-position="center">
-            <img src="img/TransCanada.jpg" alt="" />
-          </div>
-          <div class="container">
-            <header class="major">
-              <h2>Summary</h2>
-            </header>
-            <p>
-              Through many years of post-secondary education and unique
-              employment opportunities, I have developed a diverse perspective,
-              and a strong approach towards continuous learning. Such a feat
-              makes me an excellent candidate for any job. During employment, I
-              enjoy working in an environment where I am able to expand on what
-              I have learned and feel I am most skilled in developing great
-              rapport and fulfilling duties to the best of my abilities.
-            </p>
-
-            <p>
-              <b>Languages:</b>
-              <br />
-              - Intermediate: JavaScript, Java, C/C++, and Python
-              <br />
-              - Beginner: AVR Atmega2560 Assembly, and SQL
-              <br /><br />
-              <b>Code Libraries:</b>
-              <br />
-              - JavaScript: Three.js, D3.js, OpenLayers
-              <br />
-              - Python: OpenCV, GeoPandas, NumPy, Matplotlib
-              <br /><br />
-              <b>Software:</b>
-              <br />
-              - Tech: Autodesk Forge Viewer
-              <br />
-              - GIS: QGIS, GeoDa, ArcGISPro, PCI Geomatica, and Harris
-              Geospatial ENVI
-
-              <br />
-              - Biotech: Gen5 3.03 Microplate Reader, and Interscience Scan
-              Colony Counter
-              <br />
-              - Microsoft: Visual Studio Code, and Microsoft Office Suites
-
-              <br /><br />
-              <b>Other:</b>
-              <br />
-              - Version Control System (Git)
-              <br />
-              - Type-speed: Approx. 80 words per minute
-            </p>
-          </div>
-        </section>
-
-        <!-- Two -->
-        <section id="two">
-          <div class="container">
-            <h3>Notable Work</h3>
-            <div class="features">
-              <article>
-                <!-- ADD A LINK TO THE PHOTO ON GITHUB SO PEOPLE CAN SEE IT FULL SCALE -->
-                <a
-                  href="https://github.com/staubibr/arslab-web/tree/master/app-gis"
-                  class="image"
-                  ><img src="img/v2_data.png" alt=""
-                /></a>
-                <div class="inner">
-                  <h4>DEVS GIS Simulation Explorer (V1 & V2)</h4>
-                  <p>
-                    Language: JavaScript
-                    <br />
-                    Libraries: D3JS, and OpenLayers
-                    <br />
-                    <br />
-                    The current features of DEVS GIS Simulation
-                    Explorer include data loading, visualization, manipulations,
-                    data exporting, various interactive tools, and video
-                    playback
-                  </p>
-                </div>
-              </article>
-              <article>
-                <!-- ADD A LINK TO THE PHOTO ON GITHUB SO PEOPLE CAN SEE IT FULL SCALE -->
-                <a href="" class="image"><img src="/img/blank.jpeg" alt="" /></a>
-                <div class="inner">
-                  <h4>Spatial Analysis for DEVS Models</h4>
-                  <p>
-                    Language: Python
-                    <br />
-                    Libraries: GeoPandas, NumPy, PySal
-                    <br />
-                    Tool: QGIS
-                    <br />
-                    <br />
-                    Conducted research on how to develop a method that automates
-                    the generation of large-scale, spatial DEVS simulation
-                    models from GIS data (Modelling & Simulation) using various
-                    GIS Python libraries, and tools like QGIS.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <!-- ADD A LINK TO THE PHOTO ON GITHUB SO PEOPLE CAN SEE IT FULL SCALE -->
-                <a href="https://forge.autodesk.com/blog/congrats-winners-forge-hackathon" class="image"
-                  ><img src="img/game.png" alt=""
-                /></a>
-                <div class="inner">
-                  <h4>Autodesk University Forge Hackathon</h4>
-                  <p>
-                    Languages: Python and JavaScript
-                    <br />
-                    Libraries: D3JS and Three.js (r71)
-                    <br />
-                    Tool: Autodesk Forge Viewer
-                    <br />
-                    <br />
-                    Built a COVID game simulator as an interactive real-world 
-                    application that is fun to play and could train industry 
-                    practitioners to make informed risk assessments and
-                    facilities management.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <!-- ADD A LINK TO THE PHOTO ON GITHUB SO PEOPLE CAN SEE IT FULL SCALE -->
-                <a href="https://devpost.com/software/covid-bim" class="image"
-                  ><img src="img/aec_hackathon.png" alt=""
-                /></a>
-                <div class="inner">
-                  <h4>AEC Hackathon</h4>
-                  <p>
-                    Languages: C++, Python, and JavaScript
-                    <br />
-                    Libraries: D3JS and Three.js (r71)
-                    <br />
-                    Tool: Autodesk Forge Viewer
-                    <br />
-                    <br />
-                    The goal of this hackathon was to use BIM data to simulate
-                    the spread of viral particles in buildings. My contribution
-                    to the project was by developing the visualization aspect.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <!-- ADD A LINK TO THE PHOTO ON GITHUB SO PEOPLE CAN SEE IT FULL SCALE -->
-                <a
-                  href="https://github.com/omarkawach/omarkawach.github.io/blob/master/research.jpg"
-                  class="image"
-                  ><img src="img/research.jpg" alt=""
-                /></a>
-                <div class="inner">
-                  <h4>3rd Year College Research Project</h4>
-                  <p>
-                    I played a role in the collaborative research effort between
-                    the Federal Government of Canada, and the Ontario Government
-                    to investigate factors that influence the success of oral
-                    rabies vaccination of raccoons.
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <!-- Three -->
-        <section id="three">
-          <div class="container">
-            <h3>Education</h3>
-            <!-- <p>
-										After completing my 3-year advanced diploma in Biotechnology, I realized that many fields were opening more and more to those with coding backgrounds. 
-										In order to stay competitive and relevant, I decided to go back to school.
-										Having worked in virus/vaccine research, I noticed the need in spatial data mapping for outbreaks, threat-level detection, etc. 
-										For such reasons, University of Victoria's combined major program in Geomatics caught my eye. 
-										With the benefit of the program being a general computer science degree, it provides me with an opportunity to branch out and learn other skills.
-
-									</p> -->
-            <div class="features">
-              <article>
-                <a
-                  href="https://www.uvic.ca/socialsciences/geography/undergraduate/programs/geomatics/index.php"
-                  class="image"
-                  ><img src="img/uvic.jpg" alt=""
-                /></a>
-                <div class="inner">
-                  <h4>University of Victoria (2019-Present)</h4>
-                  <p>
-                    <b> Bachelor of Science Combined Major: </b>
-                    Geomatics (Geographic Information Systems and Computer
-                    Science)
-                    <br /><br />
-                    <b> Courses: </b>
-                    Data Structures & Algorithms, Discrete Mathematics,
-                    Calculus, Statistics, Linear Algebra, Human-Computer
-                    Interaction Design, Computer Architecture, Image
-                    Processing/Computer Graphics, Remote Sensing, and GIS
-                    Analysis
-                  </p>
-                </div>
-              </article>
-              <article>
-                <a
-                  href="https://www.algonquincollege.com/sat/program/biotechnology-advanced/"
-                  class="image"
-                  ><img src="img/ac.jpg" alt=""
-                /></a>
-                <div class="inner">
-                  <h4>Algonquin College (2015-2018)</h4>
-                  <p>
-                    <b>Advanced Diploma:</b> <br />
-                    Biotechnology with Dean’s Honors List for high academic
-                    standing <br /><br />
-                    <b>Courses:</b> <br />
-                    Genetic Engineering, Molecular Biology, Microbiology,
-                    Biochemistry, Bioinformatics, Regulatory Affairs, and
-                    Natural Sciences
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <!-- Four -->
-        <section id="four">
-          <div class="container">
-            <h3>Experience</h3>
-            <p>
-              <b>Research Assistant at Carleton University </b>
-              <br />
-              Employment dates: June 2020 - Dec 2020
-              <br />
-              Supervisor: Dr. Gabriel Wainer
-              <br />
-              Worksite:
-              <a href="https://arslab.sce.carleton.ca/"
-                >Advanced Real-Time Simulation Laboratory</a
-              >
-              <br />
-              <b>Lab Assistant (College) at Canadian Food Inspection Agency </b>
-              <br />
-              Employment dates: May 2017 - August 2018
-              <br />
-              Supervisor: Dr. Christine Fehlner-Gardiner
-              <br />
-              Worksite:
-              <a
-                href="https://www.inspection.gc.ca/science-and-research/our-laboratories/ottawa-animal/eng/1549573531296/1549573616506"
-                >Ottawa Animal Health Laboratory - Center of Expertise for
-                Rabies</a
-              >
-              <br />
-              <b
-                >Lab Assistant (High School) at Canadian Food Inspection Agency
-              </b>
-              <br />
-              Employment dates: Jan 2015 - June 2015, Sept 2013 - Jan 2014
-              <br />
-              Supervisor: Hongsheng Huang
-              <br />
-              Worksite:
-              <a
-                href="https://www.inspection.gc.ca/science-and-research/our-laboratories/ottawa-fallowfield-/eng/1549570125940/1549570207759"
-                >Ottawa Laboratory Fallowfield - Food Science
-              </a>
-              <br />
-              <b>Security Guard at Commissionaires</b>
-              <br />
-              Employment date: May 2016 - May 2018
-              <br />
-              Worksite:
-              <a href="https://www.commissionaires-ottawa.on.ca/pages/"
-                >National Capital Region (Ottawa)
-              </a>
-              <br />
-              <b>Sales Associate at Calvin Klein</b>
-              <br />
-              Employment date: Nov 2014 - Jan 2015
-              <br />
-              <b>Busboy at Cedarhill Golf Course & Country Club</b>
-              <br />
-              Employment date: Aug 2014 - Nov 2014
-              <br />
-              <b>Paperboy at Penny Savers</b>
-              <br />
-              Employment date: 2005 - 2012
-              <br />
-            </p>
-          </div>
-        </section>
-
-        <!-- Five -->
-        <section id="five">
-          <div class="container">
-            <h3>Volunteer Experience</h3>
-            <p>
-              <b>Global Community Mentor at UVIC </b>
-              <br />
-              Employment date: Sept 2019 - Apr 2020
-              <br />
-              <b>Flight Sergeant at Air Cadet League of Canada</b>
-              <br />
-              Employment date: 2009-2015
-              <br />
-            </p>
-          </div>
-        </section>
-      </div>
     </div>
+  </header>
+  <div class="hero-image"></div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+  <!-- Summary -->
+  <div class="container">
+    <section id="Summary" class="tabcontent">
+      <div class="content">
+        <h3>Summary</h3>
+        <p>
+          Omar Kawach has a 3-year Advanced Diploma in Biotechnology from
+          Algonquin College and is in his 4th year at the University of
+          Victoria's Combined Major in Geography and Computer Science
+          (Geomatics). His work experience spans many fields, such as,
+          Architecture, Geography, Biotechnology, and Computer Science /
+          Engineering. Given Omar's expertise and experiences in numerous
+          areas, Omar has the following information to highlight:
+        </p>
+        <p>
+          Languages: Intermediate in JavaScript, C/C++, and Python<br /><br />
+          Version Control Systems: Regular use of Git<br /><br />
+          Open Source Libraries: Proven track record with OpenLayers and
+          GeoPandas<br /><br />
+          Software and Tools: Experienced with AutoDesk Forge Viewer, QGIS,
+          GeoDa, ArcGIS Pro, and ArcGIS REST API<br /><br />
+          Skills: Stellar ability to conduct valuable research, superb work
+          ethic, and great team player<br /><br />
+          Clearance: Highest clearance achieved was SECRET level II
+          (expired)<br /><br />
+          Authorizations: Previously trained in Bio-Containment Level 2 & 3
+          experiments (bacteria, fungi, viruses)
+        </p>
+        <br />
+        <p style="text-align: center">
+          <b> Full resume available upon request </b>
+        </p>
+      </div>
+    </section>
+  </div>
 
-  <!-- End tag -->
+  <!-- Achievements -->
+  <!-- Includes Hackathons, Publications and Awards -->
+  <div class="container">
+    <section id="Achievements" class="tabcontent">
+      <div class="content">
+        <h3>Achievements</h3>
+        <h4>Hackathons</h4>
+        <h5>Autodesk University 2020 Forge Hackathon</h5>
+        <p>
+          Rank: 1st for Best 3D Video Game & 2nd for Best Overall Project<br /><br />
+          Languages: Python, JavaScript, and NodeJS<br /><br />
+          Libraries: D3JS and Three.js (r71)<br /><br />
+          Tool: Autodesk Forge Viewer<br /><br />
+          Built a COVID game simulator as an interactive real-world
+          application that is fun to play and could train industry
+          practitioners to make informed risk assessments and facilities
+          management.
+          <br />
+        </p>
+        <a href="https://forge.autodesk.com/blog/congrats-winners-forge-hackathon" class="image"><img src="img/game.png"
+            alt="" /></a>
+        <h5>AEC 2020 Hackathon</h5>
+        <p>
+          Rank: 1st for Best Hack for Humans<br /><br />
+          Languages: C++, Python, and JavaScript<br /><br />
+          Libraries: D3JS and Three.js (r71)<br /><br />
+          Tool: Autodesk Forge Viewer<br /><br />
+          The goal of this hackathon was to use BIM data to simulate the
+          spread of viral particles in buildings. My contribution to the
+          project was by developing the visualization aspect.
+          <br />
+        </p>
+        <a href="https://devpost.com/software/covid-bim" class="image"><img src="img/aec_hackathon.png" alt="" /></a>
+        <h4>Publications</h4>
+        <a href="http://www.simaud.org/2021/program.php">A cloud-based workflow for the integration of BIM to DEVS</a>
+
+        <h4>Awards</h4>
+        <h5>2021 Esri Canada GIS Scholarship - University of Victoria</h5>
+        <a href="https://scholars.esri.ca/" class="image"><img src="img/esri.png" alt="" /></a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Education -->
+  <div class="container">
+    <section id="Education" class="tabcontent">
+      <div class="content">
+        <h3>Education</h3>
+        <p>
+          After completing my 3-year advanced diploma in Biotechnology, I
+          realized that many fields were opening more and more to those with
+          coding backgrounds. In order to stay competitive and relevant, I
+          decided to go back to school. Having worked in virus/vaccine
+          research, I noticed the need in spatial data mapping for outbreaks,
+          threat-level detection, etc. For such reasons, University of
+          Victoria's combined major program in Geomatics caught my eye. With
+          the benefit of the program being a general computer science degree,
+          it provides me with an opportunity to branch out and learn other
+          skills.
+        </p>
+        <h4>University of Victoria (2019 - Present)</h4>
+        <b> Bachelor of Science Combined Major: </b><a
+          href="https://www.uvic.ca/socialsciences/geography/undergraduate/programs/geomatics/index.php">
+          Geomatics (Geographic Information Systems and Computer Science)
+        </a>
+        <p>
+          <b> Courses: </b>
+          Data Structures & Algorithms (Java), Discrete Mathematics, Calculus,
+          Statistics (R), Linear Algebra, Human-Computer Interaction Design,
+          Computer Architecture (AVR assembly), Image Processing/Computer
+          Graphics (OpenCV), Remote Sensing, and GIS Analysis
+        </p>
+        <h4>Algonquin College (2015 - 2018)</h4>
+        <b> 3-Year Advanced Diploma (or Associate's Degree): </b><a
+          href="https://www.algonquincollege.com/sat/program/biotechnology-advanced/">
+          Biotechnology with Dean’s Honors List for High Academic Standing
+        </a>
+        <p>
+          <b> Courses: </b> Genetic Engineering, Molecular Biology,
+          Microbiology, Biochemistry, Bioinformatics, Regulatory Affairs, and
+          Natural Sciences
+        </p>
+        <p>
+          <b> Research Project: </b> I played a role in the collaborative
+          research effort between the Federal Government of Canada, and the
+          Ontario Government to investigate factors that influence the success
+          of oral rabies vaccination of raccoons.
+          <a class="image"><img src="img/research.jpg" alt="" /></a>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <div class="container">
+    <section id="Experience" class="tabcontent">
+      <div class="content">
+        <h3>Experience</h3>
+        <h4>Work Experience</h4>
+        <p>
+          <b>GIS Web Developer at Statistics</b>
+          <br />
+          Employment dates: January 2021 - Present
+          <br />
+          Department: Statistical Geomatics Centre (SGC)
+          <br />
+          Worksite:
+          <a href="https://www.statcan.gc.ca/eng/employment/locations/campus">Tunney's Pasture</a>
+          <br />
+          <br />
+          <b>Research Assistant at Carleton University </b>
+          <br />
+          Employment dates: June 2020 - Dec 2020
+          <br />
+          Supervisor: Dr. Gabriel Wainer
+          <br />
+          Worksite:
+          <a href="https://arslab.sce.carleton.ca/">Advanced Real-Time Simulation Laboratory</a>
+          <br />
+          Background:
+          <a href="https://omarkawach.github.io/arslab_internship/">Omar's contribution at the lab</a>
+          <br />
+          <br />
+          <b>Lab Assistant (College) at Canadian Food Inspection Agency </b>
+          <br />
+          Employment date: May 2017 - August 2018
+          <br />
+          Supervisor: Dr. Christine Fehlner-Gardiner
+          <br />
+          Worksite:
+          <a
+            href="https://www.inspection.gc.ca/science-and-research/our-laboratories/ottawa-animal/eng/1549573531296/1549573616506">Ottawa
+            Animal Health Laboratory - Center of Expertise for
+            Rabies</a>
+          <br />
+          <br />
+          <b>Security Guard at Commissionaires</b>
+          <br />
+          Employment date: May 2016 - May 2018
+          <br />
+          Worksite:
+          <a href="https://www.commissionaires-ottawa.on.ca/pages/">National Capital Region (Ottawa)
+          </a>
+          <br />
+          <br />
+          <b>Lab Assistant (High School) at Canadian Food Inspection Agency
+          </b>
+          <br />
+          Employment date: Jan 2015 - June 2015
+          <br />
+          Supervisor: Hongsheng Huang
+          <br />
+          Worksite:
+          <a
+            href="https://www.inspection.gc.ca/science-and-research/our-laboratories/ottawa-fallowfield-/eng/1549570125940/1549570207759">Ottawa
+            Laboratory Fallowfield - Food Science
+          </a>
+          <br />
+          <br />
+          <b>Sales Associate at Calvin Klein</b>
+          <br />
+          Employment date: Nov 2014 - Jan 2015
+          <br />
+          <br />
+          <b>Busboy at Cedarhill Golf Course & Country Club</b>
+          <br />
+          Employment date: Aug 2014 - Nov 2014
+          <br />
+          <br />
+          <b>Lab Assistant (High School) at Canadian Food Inspection Agency
+          </b>
+          <br />
+          Employment date: Sept 2013 - Jan 2014
+          <br />
+          Supervisor: Hongsheng Huang
+          <br />
+          Worksite:
+          <a
+            href="https://www.inspection.gc.ca/science-and-research/our-laboratories/ottawa-fallowfield-/eng/1549570125940/1549570207759">Ottawa
+            Laboratory Fallowfield - Food Science
+          </a>
+          <br />
+          <br />
+          <b>Paperboy at Penny Savers</b>
+          <br />
+          Employment date: 2005 - 2012
+          <br />
+        </p>
+        <h4>Volunteer Experience</h4>
+        <p>
+          <b>Global Community Mentor at UVIC </b>
+          <br />
+          Employment date: Sept 2019 - Apr 2020
+          <br />
+          <br />
+          <b>Flight Sergeant at Air Cadet League of Canada</b>
+          <br />
+          Employment date: 2009-2015
+          <br />
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <footer id="footer">
+    <a href="mailto:omarkawach@outlook.com" class="fa fa-envelope fa-lg"></a>
+    <a href="https://www.linkedin.com/in/omarkawach/" class="fa fa-linkedin fa-lg"></a>
+    <a href="https://github.com/omarkawach" class="fa fa-github fa-lg"></a>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+
 </html>
