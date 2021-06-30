@@ -24,8 +24,6 @@ window.addEventListener(
   { passive: false }
 );
 
-// Start of my code
-
 // For handling menu closure in mobile mode
 let tabs = document.querySelectorAll("li");
 let tabContent = document.getElementsByClassName("tabcontent");
@@ -46,7 +44,6 @@ function closeMenu(){
   });
   navOpenIcon.classList.add("hidden");
 }
-
 
 // For switching between tab content
 function updateContent(ev){
