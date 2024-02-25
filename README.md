@@ -1,4 +1,4 @@
-## Omar's Professional Portfolio
+## Omar's Professional Portfolio (outdated)
 
 A simple portfolio showcasing my work experiences, education, and achievements.
 
