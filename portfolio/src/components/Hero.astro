@@ -1,0 +1,27 @@
+---
+const { heading, subheading } = Astro.props;
+import HeroGlobe from "./HeroGlobe.vue";
+
+const chips = [
+  "Computer scientist",
+  "Geographer",
+  "Biotechnologist",
+  "Speaker",
+  "Writer"
+];
+---
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>{heading}</h1>
+    <p>{subheading}</p>
+    <ul class="hero-chips" aria-label="Roles and disciplines">
+      {chips.map((c) => (
+        <li class="hero-chip">{c}</li>
+      ))}
+    </ul>
+  </div>
+  <div class="hero-media">
+    <HeroGlobe client:only="vue" />
+  </div>
+</section>

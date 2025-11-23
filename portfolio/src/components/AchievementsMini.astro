@@ -1,0 +1,150 @@
+<section class="achievements-mini" aria-label="Selected achievements">
+  <h2 class="achievements-title">Achievements</h2>
+  <div class="achievements-grid">
+    <article class="achievement-card" aria-labelledby="forge-title">
+      <header>
+        <h3 id="forge-title">Autodesk University Forge Hackathon 2020</h3>
+        <p class="rank">1st Best 3D Game • 2nd Overall</p>
+      </header>
+      <p class="summary">
+        COVID 3D training & risk simulation using Autodesk Forge Viewer, Three.js,
+        and D3.js.
+      </p>
+      <ul class="tech" aria-label="Technologies used">
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Node</li>
+      </ul>
+      <p class="links">
+        <a
+          href="https://www.youtube.com/watch?v=62YvoTbAK7w"
+          target="_blank"
+          rel="noopener noreferrer">Demo Video</a
+        >
+      </p>
+    </article>
+    <article class="achievement-card" aria-labelledby="aec-title">
+      <header>
+        <h3 id="aec-title">AEC Hackathon 2020</h3>
+        <p class="rank">1st Best Hack for Humans</p>
+      </header>
+      <p class="summary">
+        Visualized viral particle spread leveraging BIM and Autodesk Forge Viewer,
+        Three.js, and D3.js.
+      </p>
+      <ul class="tech" aria-label="Technologies used">
+        <li>C++</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+      </ul>
+      <p class="links">
+        <a
+          href="https://www.youtube.com/watch?v=QZfevexabPk"
+          target="_blank"
+          rel="noopener noreferrer">Demo Video</a
+        >
+      </p>
+    </article>
+    <article class="achievement-card" aria-labelledby="pub-title">
+      <header>
+        <h3 id="pub-title">Publication</h3>
+        <p class="rank">SIMAUD 2021</p>
+      </header>
+      <p class="summary">
+        Cloud workflow integrating BIM with DEVS simulation for performance
+        insights.
+      </p>
+      <p class="links">
+        <a
+          href="http://www.simaud.org/2021/program.php"
+          target="_blank"
+          rel="noopener noreferrer">Paper Link</a
+        >
+      </p>
+    </article>
+  </div>
+</section>
+
+<style>
+  .achievements-mini {
+    margin: var(--space-lg) 0 var(--space-md);
+  }
+  .achievements-title {
+    margin: 0 0 var(--space-md);
+    font-size: 1.9rem;
+  }
+  .achievements-grid {
+    display: grid;
+    gap: var(--space-md);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .achievement-card {
+    background: var(--header-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-md) var(--space-md) var(--space-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    box-shadow: 0 4px 14px -8px rgba(0, 0, 0, 0.25);
+    transition: var(--transition);
+  }
+  .achievement-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 6px 22px -10px rgba(0, 0, 0, 0.35);
+  }
+  .achievement-card header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .achievement-card h3 {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+  .achievement-card .rank {
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: var(--color-muted);
+  }
+  .achievement-card .summary {
+    margin: 0;
+    font-size: 0.78rem;
+    line-height: 1.4;
+    color: var(--color-text);
+  }
+  .achievement-card .tech {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin: 0.1rem 0 0.2rem;
+    padding: 0;
+  }
+  .achievement-card .tech li {
+    font-size: 0.6rem;
+    background: var(--header-bg);
+    border: 1px solid var(--color-border);
+    padding: 0.3rem 0.5rem 0.32rem;
+    border-radius: 999px;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+  }
+  .achievement-card .links {
+    margin: 0.15rem 0 0;
+    font-size: 0.7rem;
+  }
+  .achievement-card a {
+    text-decoration: none;
+  }
+  .achievement-card a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 560px) {
+    .achievement-card {
+      padding: var(--space-sm) var(--space-md);
+    }
+  }
+</style>

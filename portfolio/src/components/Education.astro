@@ -1,0 +1,172 @@
+<section class="education" aria-label="Education">
+  <h2>Education</h2>
+  <div class="education-cards">
+    <article class="education-card" aria-labelledby="uvic-heading">
+      <header>
+        <h3 id="uvic-heading">
+          University of Victoria <span class="dates">(2019–2022)</span>
+        </h3>
+        <p class="degree">
+          <strong>BSc Combined Major:</strong>
+          <a
+            href="https://www.uvic.ca/socialsciences/geography/undergraduate/programs/geomatics/index.php"
+            target="_blank"
+            rel="noopener noreferrer">Geomatics</a>
+        </p>
+      </header>
+      <div class="body">
+        <p>
+          <strong>Relevant Courses:</strong> GIS, Remote Sensing, Data Visualization (JavaScript), Relational Databases (MySQL), 2D Image Processing & Computer Graphics, Artificial Intelligence (Python), Data Structures & Algorithms (Java), Linear Algebra, Statistics (R), Operating Systems (C/C++), HCI design.
+        </p>
+        <p>
+          <strong>Software:</strong> ArcGIS Pro, ArcGIS Online, Google Earth Engine,
+          QGIS, GeoDa, Microsoft Office Suites
+        </p>
+        <p>
+          <strong>Awards:</strong>
+          <a
+            href="https://scholars.esri.ca/profile/?uid=Omar%20Kawach"
+            target="_blank"
+            rel="noopener noreferrer"
+            >2021 Esri Canada Higher Education GIS Scholarship</a>
+        </p>
+        <p>
+          <strong>Capstone project:</strong>
+          <a
+            href="https://interactivelearner-gis.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Interactive Learner – GIS</a>, your one-stop shop for all things GIS!
+        </p>
+        <p>
+          <strong>Class research:</strong> Deep learning and remote sensing for sea ice concentration classification using Sentinel-1 optical data and pixel-based segmentation (<a href="https://github.com/sum1lim/sea_ice_remote_sensing/blob/master/Project%20Report.pdf" target="_blank" rel="noopener noreferrer">paper</a>).
+        </p>
+        <ul class="research-tech">
+          <li><strong>Libraries:</strong> Scikit-learn, TensorFlow, Keras, OpenCV, Scikit-image, Imbalanced-learn, Pandas, Seaborn, Matplotlib</li>
+        </ul>
+      </div>
+    </article>
+    <article class="education-card" aria-labelledby="algonquin-heading">
+      <header>
+        <h3 id="algonquin-heading">
+          Algonquin College <span class="dates">(2015–2018)</span>
+        </h3>
+        <p class="degree">
+          <strong>Advanced Diploma:</strong>
+          <a
+            href="https://www.algonquincollege.com/sat/program/biotechnology-advanced/"
+            target="_blank"
+            rel="noopener noreferrer">Biotechnology</a>
+        </p>
+      </header>
+      <div class="body">
+        <p>
+          <strong>Courses:</strong> Genetic Engineering, Molecular Biology,
+          Microbiology, Biochemistry, Bioinformatics, Regulatory Affairs, Natural
+          Sciences.
+        </p>
+        <p>
+          <strong>Awards:</strong> Dean’s Honors List for high academic standing.
+        </p>
+        <p>
+          <strong>Capstone project:</strong> Assisted federal & provincial collaboration
+          studying factors influencing oral rabies vaccination success in raccoons
+          (<a
+            href="/img/research.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open research project image in new tab">image</a>).
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<style>
+  .education {
+    margin: var(--space-lg) 0 var(--space-md);
+  }
+  .education h2 {
+    margin: 0 0 var(--space-md);
+    font-size: 1.9rem;
+  }
+  .education-cards {
+    display: grid;
+    gap: var(--space-md);
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+  @media (max-width: 1080px) {
+    .education-cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  .education-card {
+    background: var(--header-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-md) var(--space-lg) var(--space-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    box-shadow: 0 4px 18px -8px rgba(0, 0, 0, 0.25);
+    transition: var(--transition);
+  }
+  .education-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 6px 24px -10px rgba(0, 0, 0, 0.35);
+  }
+  .education-card header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+  .education-card h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.25;
+  }
+  .education-card .dates {
+    font-weight: 500;
+    color: var(--color-muted);
+    font-size: 0.9rem;
+  }
+  .education-card .degree {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-muted);
+  }
+  .education-card .body p {
+    margin: 0 0 0.75rem;
+    line-height: 1.45;
+    font-size: 0.85rem;
+  }
+  .education-card .body p:last-child {
+    margin-bottom: 0;
+  }
+  .education-card .body ul {
+    margin: 0 0 0.75rem;
+    padding-left: 1.1rem;
+    line-height: 1.45;
+    font-size: 0.85rem;
+  }
+  .education-card .body ul.research-tech li {
+    margin: 0 0 0.35rem;
+  }
+  .education-card .body ul.research-tech li:last-child {
+    margin-bottom: 0;
+  }
+  .education-card .body ul.research-tech {
+    font-size: 0.78rem;
+  }
+  .education-card a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 640px) {
+    .education-card {
+      padding: var(--space-md);
+    }
+    .education-card h3 {
+      font-size: 1.15rem;
+    }
+  }
+</style>

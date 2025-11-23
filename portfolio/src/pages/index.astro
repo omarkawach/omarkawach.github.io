@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import Biography from "./biography.md";
+import Education from "../components/Education.astro";
+import AchievementsMini from "../components/AchievementsMini.astro";
+---
+
+<BaseLayout title="Omar Kawach" description="Software Engineering Portfolio">
+  <Hero
+    heading="Hello, my name is Omar Kawach"
+    subheading="My diverse experience will bring a unique perspective to your workplace. Resume available upon request."
+  />
+  <section>
+    <section class="image-cards" aria-label="Profile images">
+      <figure class="image-card">
+        <a
+          href="https://mediaspace.esri.com/media/t/1_n60lcn7p/373383312"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Watch Omar presenting at Esri's 2025 Developer & Technology Summit Plenary (opens in a new tab)"
+        >
+          <img
+            src="/img/profile.jpeg"
+            alt="Portrait of Omar Kawach"
+            loading="lazy"
+          />
+          <figcaption>
+            Omar presenting for the ArcGIS Maps SDK for JavaScript at Esri's 2025 Developer & Technology Summit Plenary
+          </figcaption>
+        </a>
+      </figure>
+      <figure class="image-card">
+          <a
+            href="https://mediaspace.esri.com/media/t/1_04l3ewhv/337590522"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Watch Omar presenting at Esri's 2024 Developer & Technology Summit Plenary (opens in a new tab)"
+          >
+            <img
+              src="/img/profile2.jpeg"
+              alt="Alternate portrait of Omar Kawach"
+              loading="lazy"
+            />
+            <figcaption>
+              Omar presenting for the ArcGIS Maps SDK for JavaScript at Esri's 2024 Developer & Technology Summit Plenary
+            </figcaption>
+          </a>
+      </figure>
+    </section>
+    <Biography />
+    <Education />
+    <AchievementsMini />
+  </section>
+</BaseLayout>
