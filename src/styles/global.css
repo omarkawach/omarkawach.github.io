@@ -33,13 +33,24 @@
 html,
 body {
   height: 100%;
+  min-height: 100%;
+  background: var(--bg); /* paint gradient on both to avoid edge flashes */
+}
+
+/* Fixed underlay to cover iOS Safari overscroll (bounce) area */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: var(--bg);
+  pointer-events: none;
+  will-change: opacity;
 }
 
 body {
   margin: 0;
   font-family: var(--font-sans);
-  background: var(--bg);
-  background-attachment: fixed;
   color: var(--color-text);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;

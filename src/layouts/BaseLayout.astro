@@ -11,6 +11,7 @@ const {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content={description} />
+    <meta name="theme-color" content="#04140f" />
     <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
@@ -69,13 +70,28 @@ const {
     <script is:inline>
       const root = document.documentElement;
       const toggle = document.getElementById("theme-toggle");
-      const stored = localStorage.getItem("theme");
-      if (stored) root.setAttribute("data-theme", stored);
-      toggle?.addEventListener("click", () => {
-        const current =
-          root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-        root.setAttribute("data-theme", current);
-        localStorage.setItem("theme", current);
+      const themeMeta = document.querySelector('meta[name="theme-color"]');
+      const DARK_COLOR = '#04140f';
+      const LIGHT_COLOR = '#f4fff9';
+
+      function applyTheme(t) {
+        root.setAttribute('data-theme', t);
+        localStorage.setItem('theme', t);
+        if (themeMeta) themeMeta.setAttribute('content', t === 'dark' ? DARK_COLOR : LIGHT_COLOR);
+      }
+
+      const stored = localStorage.getItem('theme');
+      if (stored) {
+        applyTheme(stored);
+      } else {
+        // Initialize using prefers-color-scheme for first visit
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        applyTheme(prefersDark ? 'dark' : 'light');
+      }
+
+      toggle?.addEventListener('click', () => {
+        const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        applyTheme(next);
       });
     </script>
   </body>
