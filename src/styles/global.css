@@ -11,7 +11,7 @@
 }
 
 :root[data-theme='light'] {
-  --bg: linear-gradient(140deg, #f4fff9 0%, #e3f7ec 40%, #d6f0e4 70%, #f1fff7 100%);
+  --bg: #f4fff9;
   --color-text: #0d241a;
   --color-muted: #476556;
   --color-border: #bfd9cc;
@@ -21,7 +21,7 @@
 }
 
 :root[data-theme='dark'] {
-  --bg: radial-gradient(circle at 50% 45%, #0b3d2e 0%, #062019 70%, #04140f 100%);
+  --bg: #08281E;
   --color-text: #d6f5e6;
   --color-muted: #7db69a;
   --color-border: #134c37;
@@ -33,13 +33,12 @@
 html,
 body {
   height: 100%;
-  background: var(--bg);
 }
 
 body {
+  background: var(--bg);
   margin: 0;
   font-family: var(--font-sans);
-  background-attachment: fixed;
   color: var(--color-text);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -224,50 +223,13 @@ a:hover {
 }
 
 @keyframes pulse {
-
   0%,
   100% {
     transform: scale(1);
   }
-
   50% {
     transform: scale(1.03);
   }
-}
-
-.site-footer {
-  text-align: center;
-  padding: var(--space-lg) var(--space-md) var(--space-md);
-  font-size: .75rem;
-  color: var(--color-muted);
-}
-
-
-.markdown-page {
-  max-width: 76ch;
-  margin: 0 auto;
-}
-
-.markdown-page h1 {
-  font-size: clamp(1.8rem, 4.5vw, 2.6rem);
-  margin-top: 0;
-}
-
-.markdown-page h2 {
-  margin-top: 2.2rem;
-  font-size: 1.35rem;
-}
-
-.markdown-page p,
-.markdown-page li {
-  line-height: 1.55;
-}
-
-.markdown-page code {
-  font-size: .85rem;
-  background: var(--color-border);
-  padding: .15rem .4rem;
-  border-radius: 4px;
 }
 
 /* Image cards */
