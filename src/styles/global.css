@@ -30,14 +30,20 @@
   --header-bg: hsla(160 22% 12% / .6);
 }
 
+html {
+	overflow: hidden;
+}
+
 html,
 body {
-  height: 100%;
   background: var(--bg);
 }
 
 body {
   margin: 0;
+  overflow: scroll;
+	height: 100vh;
+	overscroll-behavior: contain;
   font-family: var(--font-sans);
   background-attachment: fixed;
   color: var(--color-text);
