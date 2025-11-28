@@ -1,0 +1,46 @@
+---
+interface ImageItem {
+  href: string;
+  imgSrc: string;
+  alt: string;
+  caption: string;
+}
+
+const {
+  images = [
+    {
+      href: "https://mediaspace.esri.com/media/t/1_n60lcn7p/373383312",
+      imgSrc: "/img/profile.jpeg",
+      alt: "Portrait of Omar Kawach",
+      caption:
+        "Omar presenting for the ArcGIS Maps SDK for JavaScript at Esri's 2025 Developer & Technology Summit Plenary",
+    },
+    {
+      href: "https://mediaspace.esri.com/media/t/1_04l3ewhv/337590522",
+      imgSrc: "/img/profile2.jpeg",
+      alt: "Alternate portrait of Omar Kawach",
+      caption:
+        "Omar presenting for the ArcGIS Maps SDK for JavaScript at Esri's 2024 Developer & Technology Summit Plenary",
+    },
+  ] as ImageItem[],
+  ariaLabel = "Profile images",
+} = Astro.props;
+---
+
+<section class="image-cards" aria-label={ariaLabel}>
+  {
+    images.map((item: ImageItem) => (
+      <figure class="image-card">
+        <a
+          href={item.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Watch Omar presenting (${item.alt}) (opens in a new tab)`}
+        >
+          <img src={item.imgSrc} alt={item.alt} loading="lazy" />
+          <figcaption>{item.caption}</figcaption>
+        </a>
+      </figure>
+    ))
+  }
+</section>

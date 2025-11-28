@@ -1,0 +1,138 @@
+<section class="other-experience" aria-label="Other Work Experience">
+  <h2 class="other-title">Other work experience</h2>
+  <div class="other-grid">
+    <article class="other-card" aria-labelledby="cfia-title">
+      <header>
+        <h3 id="cfia-title">
+          Lab Assistant — Canadian Food Inspection Agency (CFIA)
+        </h3>
+        <p class="dates">May 2017 – Aug 2018</p>
+      </header>
+      <p class="summary">
+        Was responsible for experiments supporting collaborative research on
+        oral rabies vaccination campaign of wildlife including conducting virus
+        neutralization assays and vaccine titrations.<br /><br />Database
+        management for various projects including reporting the monthly
+        occurrences of rabies as part of a coordinated World Health Organization
+        effort to control/eradicate rabies in the Americas.<br /><br />Setup
+        newly acquired BioTek Epoch2 Microplate Reader and Gen5 3.03 software by
+        validating, troubleshooting, and producing an 8-page manual. <br /><br
+        />Maintained mammalian cell cultures; e.g. cell lines HEK293, VERO(A)
+        and MNA. Performed monoclonal antibody clarification, purification and
+        enzyme-labelling for an internally-funded competitive ELISA development
+        project.<br /><br />
+      </p>
+    </article>
+
+    <article class="other-card" aria-labelledby="commissionaires-title">
+      <header>
+        <h3 id="commissionaires-title">Security Guard — Commissionaires</h3>
+        <p class="dates">May 2016 – May 2018 </p>
+      </header>
+      <p class="summary">
+        Obtained Level II SECRET security clearance 2017 (Inactive).<br /><br />
+        Ensured access control by verifying appropriate documentation, and issued
+        keys and passes to staff, students and visitors<br /><br />
+        Monitored alarm systems and closed-circuit television<br /><br />
+        Preserved daily log of on premise occurrences and incidences.<br /><br
+        />
+        Performed general work safety inspections throughout buildings, and followed
+        emergency procedures when necessary<br /><br />
+        Control of protected information (A, B and C).
+      </p>
+    </article>
+
+    <article class="other-card" aria-labelledby="cfia-2013-2015-title">
+      <header>
+        <h3 id="cfia-2015-title">Lab Assistant (High School Intern) — CFIA</h3>
+        <p class="dates">
+          Jan 2015 – Jun 2015, Sept 2013 – Jan 2014
+        </p>
+      </header>
+      <p class="summary">
+        Proposed the use of Interscience Scan® 1200 automatic HD colony counter
+        equipment and software to increase lab efficiencies. Bacterial colony
+        counting tasks that would take hours became minutes, results were easily
+        traceable, automated, and exportable in different data formats.<br /><br
+        />Used microbiological techniques to grow bacterial cultures on
+        selective media (Campylobacter jejuni in vegetables). <br /><br />
+        Expertise with pH meters, spectrophotometers, light microscope, centrifuges
+        and column chromatography.
+      </p>
+    </article>
+  </div>
+</section>
+
+<style>
+  .other-experience {
+    margin: var(--space-lg) 0 var(--space-md);
+  }
+  .other-title {
+    margin: 0 0 var(--space-md);
+    font-size: 1.9rem;
+  }
+  .other-grid {
+    display: grid;
+    gap: var(--space-md);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+  .other-card {
+    background: var(--header-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-md) var(--space-md) var(--space-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    box-shadow: 0 4px 18px -8px rgba(0, 0, 0, 0.25);
+    transition: var(--transition);
+  }
+  .other-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 6px 24px -10px rgba(0, 0, 0, 0.35);
+  }
+  .other-card header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .other-card h3 {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+  .other-card .dates {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--color-muted);
+    font-weight: 600;
+    letter-spacing: 0.2px;
+  }
+  .other-card .summary {
+    margin: 0;
+    font-size: 0.78rem;
+    line-height: 1.4;
+    color: var(--color-text);
+  }
+  .other-card .other-tech {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin: 0.1rem 0 0.2rem;
+    padding: 0;
+  }
+  .other-card .other-tech li {
+    font-size: 0.6rem;
+    background: var(--header-bg);
+    border: 1px solid var(--color-border);
+    padding: 0.3rem 0.5rem 0.32rem;
+    border-radius: 999px;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+  }
+  @media (max-width: 560px) {
+    .other-card {
+      padding: var(--space-sm) var(--space-md);
+    }
+  }
+</style>

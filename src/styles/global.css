@@ -84,7 +84,7 @@ a:hover {
   gap: var(--space-xs);
 }
 
-.linkedin-link, .github-link {
+.linkedin-link, .github-link, .email-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -101,12 +101,14 @@ a:hover {
 .linkedin-link:hover,
 .linkedin-link:focus-visible,
 .github-link:hover,
-.github-link:focus-visible {
+.github-link:focus-visible,
+.email-link:hover,
+.email-link:focus-visible {
   background: var(--color-border);
   outline: none;
 }
 
-.linkedin-link svg, .github-link svg {
+.linkedin-link svg, .github-link svg, .email-link svg {
   width: 1.15rem;
   height: 1.15rem;
   display: block;
@@ -131,6 +133,11 @@ a:hover {
   max-width: var(--site-max);
   margin: 0 auto;
   padding: var(--space-lg) var(--space-md) var(--space-lg);
+}
+
+.content h2 {
+  margin: 0 0 var(--space-md);
+  font-size: 1.9rem;
 }
 
 .hero {
